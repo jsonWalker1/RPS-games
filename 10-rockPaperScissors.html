@@ -16,13 +16,13 @@
         <p class="resultLocal"></p>
 
         <button onclick="playGame('rock');">
-            <img src="img/rock-emoji.png" class="icon">
+            <img src="rock-emoji.png" class="icon">
         </button>
         <button onclick="playGame('paper');">
-            <img src="img/paper-emoji.png" class="icon">
+            <img src="paper-emoji.png" class="icon">
         </button>
         <button onclick="playGame('scissors');">
-            <img src="img/scissors-emoji.png" class="icon">
+            <img src="scissors-emoji.png" class="icon">
         </button>
         <button class="resetButton" onclick="resetGame()">Reset</button>
     </main>
@@ -84,7 +84,7 @@
 
             // Aktualizace výsledků na stránce
             document.querySelector('.result').innerText = result;
-            document.querySelector('.move').innerHTML = `You <img src="img/${playerMove}-emoji.png" class="iconMove"> Computer <img src="img/${compMove}-emoji.png" class="iconMove">`;
+            document.querySelector('.move').innerHTML = `You <img src="${playerMove}-emoji.png" class="iconMove"> Computer <img src="${compMove}-emoji.png" class="iconMove">`;
             scoreText.innerText = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
         }
     </script>
